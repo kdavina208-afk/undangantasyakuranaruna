@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Tasyakuran Aruna Avelisse</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffe3ee;--bg2:#fff6d6;--bg3:#dff6ec;--ink:#6b3a55;--soft:#9a6b86;--card:rgba(255,255,255,.82);--pink:#ff8fb8;--yellow:#ffd166;--mint:#7fd8b8;--lav:#c9b6ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#3a2140;--bg2:#2d2a4d;--bg3:#1f3b4a;--ink:#ffe9f3;--soft:#e8c3d8;--card:rgba(60,40,75,.78)}}
+:root[data-theme="dark"]{--bg1:#3a2140;--bg2:#2d2a4d;--bg3:#1f3b4a;--ink:#ffe9f3;--soft:#e8c3d8;--card:rgba(60,40,75,.78)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Quicksand','Trebuchet MS',sans-serif;color:var(--ink);background:linear-gradient(170deg,var(--bg1),var(--bg2) 55%,var(--bg3));background-attachment:fixed;overflow-x:hidden;text-align:center}
+h1,h2,.script{font-family:'Pacifico','Brush Script MT',cursive;font-weight:400;margin:0}
+.fl{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.fl span{position:absolute;bottom:-60px;font-size:28px;opacity:.8;animation:up linear infinite}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg)}}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+.photo{width:210px;height:210px;border-radius:50%;object-fit:cover;border:8px solid #fff;box-shadow:0 0 0 6px var(--pink),0 0 0 12px var(--yellow),0 12px 30px rgba(255,143,184,.5);animation:bob 4s ease-in-out infinite}
+#cover{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;background:linear-gradient(170deg,var(--bg1),var(--bg2) 55%,var(--bg3));transition:transform 1s ease,opacity 1s}
+#cover.go{transform:translateY(-100%);opacity:0;pointer-events:none}
+#cover>*{position:relative;z-index:1;animation:pop .9s both}
+#cover>:nth-child(2){animation-delay:.3s}#cover>:nth-child(3){animation-delay:.6s}#cover>:nth-child(4){animation-delay:.9s}#cover>:nth-child(5){animation-delay:1.2s}
+.tag{letter-spacing:3px;font-size:13px;text-transform:uppercase;color:var(--soft);font-weight:700}
+h1{font-size:40px;line-height:1.25;color:var(--pink);text-shadow:0 2px 0 #fff8}
+.btn{font-family:'Baloo 2','Trebuchet MS',sans-serif;font-size:18px;font-weight:700;border:0;border-radius:40px;padding:13px 30px;color:#fff;background:linear-gradient(135deg,#ff8fb8,#ffb067);box-shadow:0 8px 20px rgba(255,143,184,.55);cursor:pointer;text-decoration:none;display:inline-block;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+main{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 18px 90px}
+section{padding:46px 0 10px}
+.card{background:var(--card);border-radius:28px;padding:24px 20px;box-shadow:0 10px 30px rgba(201,182,255,.35);border:3px dashed var(--lav)}
+.rv{opacity:0;transform:translateY(40px) scale(.96);transition:all .9s cubic-bezier(.2,.9,.3,1.2)}
+.rv.in{opacity:1;transform:none}
+h2{font-size:28px;color:var(--pink);margin-bottom:12px}
+p{line-height:1.7;margin:8px 0}
+.big{font-family:'Baloo 2','Trebuchet MS',sans-serif;font-size:56px;font-weight:700;line-height:1;color:var(--pink)}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.chip{background:var(--card);border-radius:20px;padding:10px 14px;min-width:68px;border:3px solid var(--yellow)}
+.chip b{display:block;font-family:'Baloo 2',sans-serif;font-size:28px;color:var(--ink)}
+.chip small{color:var(--soft);font-weight:700}
+.ic{font-size:34px;display:block;animation:bob 3s ease-in-out infinite}
+#mus{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:0;font-size:22px;background:var(--card);box-shadow:0 4px 14px rgba(0,0,0,.2);cursor:pointer}
+footer{padding:30px 0 0;color:var(--soft);font-size:14px}
+</style>
+</head>
+<body>
+<div class="fl" id="fl"></div>
+
+<div id="cover">
+<div class="tag">Tasyakuran Kelahiran</div>
+<img class="photo" src="foto-aruna.jpg" alt="Foto Aruna">
+<h1>Aruna<br>Avelisse</h1>
+<p style="margin:0">Kamu diundang ke pesta syukur si kecil 🎈</p>
+<button class="btn" id="open">💌 Buka Undangan</button>
+</div>
+
+<main id="main">
+<section style="padding-top:36px">
+<div class="rv"><div class="tag">Tasyakuran Kelahiran</div>
+<img class="photo" style="margin:18px 0" src="foto-aruna.jpg" alt="Aruna Avelisse">
+<h1 style="font-size:44px">Aruna Avelisse<br>Hardiansyah</h1></div>
+</section>
+
+<section><div class="card rv">
+<span class="ic">🧸</span>
+<h2>Bismillah</h2>
+<p>Dengan penuh rasa syukur kepada Allah SWT atas lahirnya buah hati kami, dengan segala kerendahan hati kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara tasyakuran:</p>
+<p class="script" style="font-size:26px;color:var(--pink)">Aruna Avelisse Hardiansyah</p>
+</div></section>
+
+<section><div class="card rv">
+<span class="ic">📅</span>
+<h2>Hari &amp; Tanggal</h2>
+<div class="big">25</div>
+<p style="font-weight:700;font-size:20px;margin:4px 0">Oktober 2026</p>
+<p>Hari Minggu</p>
+<span class="ic" style="margin-top:14px">⏰</span>
+<h2>Waktu</h2>
+<p style="font-weight:700;font-size:20px;margin:4px 0">11.00 WIB – selesai</p>
+</div></section>
+
+<section><div class="card rv">
+<span class="ic">🎈</span>
+<h2>Hitung Mundur</h2>
+<div class="row" id="cd"></div>
+</div></section>
+
+<section><div class="card rv">
+<span class="ic">📍</span>
+<h2>Lokasi Acara</h2>
+<p style="font-weight:700">Jl. Pertanian, Dusun III, Gang Abadi<br>Desa Jambur Pulau (Perbaungan)</p>
+<a class="btn" style="animation:none;margin-top:10px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jl.+Pertanian+Gang+Abadi+Jambur+Pulau+Perbaungan">🗺️ Buka Peta</a>
+</div></section>
+
+<section><div class="card rv">
+<span class="ic">🌈</span>
+<p>Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan mendoakan si kecil agar tumbuh menjadi anak yang sehat, saleh/salihah, dan membanggakan.</p>
+<p class="script" style="font-size:24px;color:var(--pink)">Terima kasih 💖</p>
+<a class="btn" style="animation:none" target="_blank" rel="noopener" id="wa" href="#">💬 Bagikan via WhatsApp</a>
+</div></section>
+<footer>Dengan cinta, keluarga Aruna Avelisse 🌸</footer>
+</main>
+
+<button id="mus" aria-label="Musik">🎵</button>
+
+<script>
+(function(){
+var fl=document.getElementById('fl'),em=['☁️','⭐','🎈','🌙','🦋','🌸','🧸','💖'];
+for(var i=0;i<14;i++){var s=document.createElement('span');s.textContent=em[i%em.length];s.style.left=(Math.random()*92)+'%';s.style.fontSize=(20+Math.random()*22)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*14)+'s';fl.appendChild(s);}
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');}});},{threshold:.2});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+var target=Date.UTC(2026,9,25,4,0,0),cd=document.getElementById('cd');
+function tick(){var d=target-Date.now();if(d<0){cd.innerHTML='<p style="font-weight:700">Acara sedang/telah berlangsung 🎉</p>';return;}
+var v=[[Math.floor(d/864e5),'Hari'],[Math.floor(d%864e5/36e5),'Jam'],[Math.floor(d%36e5/6e4),'Menit'],[Math.floor(d%6e4/1e3),'Detik']];
+cd.innerHTML=v.map(function(a){return '<div class="chip"><b>'+a[0]+'</b><small>'+a[1]+'</small></div>';}).join('');}
+tick();setInterval(tick,1000);
+var wt='Assalamu\u2019alaikum. Kami mengundang Anda ke tasyakuran Aruna Avelisse Hardiansyah, Minggu 25 Oktober 2026 pukul 11.00 WIB s/d selesai, di Jl. Pertanian, Dusun III, Gang Abadi, Desa Jambur Pulau (Perbaungan). Buka undangan: ';
+var wa=document.getElementById('wa');wa.href='https://wa.me/?text='+encodeURIComponent(wt+location.href);
+var ac=null,on=false,tm=null,notes=[262,262,392,392,440,440,392,0,349,349,330,330,294,294,262,0],k=0,mb=document.getElementById('mus');
+function beep(f){if(!f||!ac)return;var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=f*1.5;g.gain.setValueAtTime(.0001,ac.currentTime);g.gain.exponentialRampToValueAtTime(.12,ac.currentTime+.03);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+.6);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+.65);}
+function play(){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.resume)ac.resume();on=true;mb.textContent='🎵';tm=setInterval(function(){beep(notes[k++%notes.length]);},420);}catch(e){}}
+function stop(){on=false;mb.textContent='🔇';clearInterval(tm);}
+mb.onclick=function(){on?stop():play();};
+document.getElementById('open').onclick=function(){document.getElementById('cover').classList.add('go');window.scrollTo(0,0);play();};
+})();
+</script>
+</body>
+</html>
